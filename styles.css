@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-size: 24px; /* 增大字体 */
+}
+
+#selection-screen, #battle-screen {
+    text-align: center;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 24px; /* 增大按钮字体 */
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin: 10px;
+}
+
+#battlefield {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%; /* 增加Pokemon之间的距离 */
+    margin: 0 auto;
+    position: relative;
+}
+
+.player-info {
+    width: 45%;
+    text-align: center;
+}
+
+#math-question {
+    margin-top: 20px;
+}
+
+#attack-effect {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+    animation: attack-animation 1s ease-in-out;
+}
+
+@keyframes attack-animation {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(2); opacity: 0.5; }
+    100% { transform: scale(1); opacity: 0; }
+}
